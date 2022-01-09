@@ -35,11 +35,12 @@ public class Main {
         Collections.addAll(list3, 5, 3, 15, 1, 500);
         var list4 = new ArrayList<Integer>();
         Collections.addAll(list4, 5, 4, 3, 2, 18, 8);
-        var list5 = new ArrayList<Integer>(list4);
+        var list5 = new ArrayList<>(list4);
         System.out.println(list3);
         System.out.println(list4);
         list5.retainAll(list3);
-        if (list5.retainAll(list3)) {
+        list5.retainAll(list3);
+        if (list5.isEmpty()) {
             System.out.println("sorry, lists doesn't have similar elements");
         } else {
             System.out.println("similar elements " + list5);
