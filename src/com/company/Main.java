@@ -39,7 +39,6 @@ public class Main {
         System.out.println(list3);
         System.out.println(list4);
         list5.retainAll(list3);
-        list5.retainAll(list3);
         if (list5.isEmpty()) {
             System.out.println("sorry, lists doesn't have similar elements");
         } else {
